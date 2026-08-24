@@ -4,7 +4,7 @@ A URL shortener where the redirect never waits on non-critical work: Redis
 caches hot links, click counting runs asynchronously in the background,
 and Redis-backed rate limiting protects link creation from abuse.
 
-![LinkSnap screenshot](./screenshot.png)
+![LinkSnap screenshot](./url-shortner-frontend/src/screenshots/Dashboard.png)
 
 **Live demo:** [linksnap-frontend-o0zh.onrender.com](https://linksnap-frontend-o0zh.onrender.com)
 *(free-tier hosting — first request may take 10–30s to wake up)*
