@@ -2,6 +2,7 @@ package com.vishvatej.url_shortener.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -16,6 +17,18 @@ public class WebConfig implements WebMvcConfigurer {
     {
         registry.addInterceptor(rateLimitInterceptor)
                 .addPathPatterns("/api/shorten");
+    }
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry)
+    {
+        registry.addMapping("/**")
+                .allowedOrigins(
+                        "http://localhost:5173",
+                        "https://linksnap-frontend-o0zh.onrender.com"
+                )
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*");
     }
 
 }
