@@ -49,13 +49,13 @@ function Analytics() {
                     Analytics
                 </h2>
 
-                <p className="mt-1 text-sm text-slate-500">
+                <p className="mt-1 text-sm text-slate-600">
                     Check the statistics of a shortened URL.
                 </p>
 
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+            <div className="rounded-xl border border-[#d7d9e2] bg-[#f4f5f9] p-5 shadow-sm sm:p-6">
 
              
                 <form
@@ -69,7 +69,7 @@ function Analytics() {
                         onChange={(e) => setShortCode(e.target.value)}
                         placeholder="Enter short code"
                         disabled={loading}
-                        className="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:bg-slate-50"
+                        className="min-w-0 flex-1 rounded-lg border border-[#d7d9e2] bg-white px-4 py-3 text-sm text-slate-900 outline-none placeholder:text-slate-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:bg-slate-100"
                     />
 
                     <button
@@ -97,7 +97,7 @@ function Analytics() {
                         <div className="grid gap-4 sm:grid-cols-2">
 
                           
-                            <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+                            <div className="rounded-lg border border-[#d7d9e2] bg-white p-5">
 
                                 <p className="text-sm text-slate-500">
                                     Total Clicks
@@ -110,9 +110,9 @@ function Analytics() {
                             </div>
 
                           
-                            <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+                            <div className="rounded-lg border border-[#d7d9e2] bg-white p-5">
 
-                                <p className="text-sm text-slate-500">
+                                <p className="text-sm text-slate-600">
                                     Short Code
                                 </p>
 
@@ -125,7 +125,7 @@ function Analytics() {
                         </div>
 
                        
-                        <div className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-5">
+                        <div className="mt-4 rounded-lg border border-[#d7d9e2] bg-white p-5">
 
                             <p className="text-sm text-slate-500">
                                 Original URL

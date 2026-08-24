@@ -25,7 +25,7 @@ function ShortLinkResult({ result }) {
     };
 
     return (
-        <div className="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-5">
+       <div className="mt-6 rounded-lg border border-[#d7d9e2] bg-[#f4f5f9] p-5">
 
             <p className="mb-2 text-sm font-medium text-slate-700">
                 Short URL
@@ -33,7 +33,7 @@ function ShortLinkResult({ result }) {
 
             <div className="flex flex-col gap-2 sm:flex-row">
 
-                <div className="min-w-0 flex-1 rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <div className="min-w-0 flex-1 rounded-lg border border-[#d7d9e2] bg-white px-4 py-3">
 
                     <p className="truncate font-mono text-sm text-blue-600">
                         {result.shortUrl}
@@ -47,7 +47,7 @@ function ShortLinkResult({ result }) {
                     className={`rounded-lg px-5 py-3 text-sm font-medium transition ${
                         copied
                             ? "bg-green-600 text-white"
-                            : "border border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
+                            : "border border-[#d7d9e2] bg-white text-slate-700 hover:bg-slate-50"
                     }`}
                 >
                     {copied ? "Copied" : "Copy"}
@@ -55,7 +55,7 @@ function ShortLinkResult({ result }) {
 
             </div>
 
-            <div className="mt-4 flex flex-col gap-2 border-t border-slate-200 pt-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-4 flex flex-col gap-2 border-t border-[#d7d9e2] pt-4 text-sm sm:flex-row sm:items-center sm:justify-between">
 
                 <p className="text-slate-500">
                     Short code:

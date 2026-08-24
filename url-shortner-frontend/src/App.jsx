@@ -7,7 +7,7 @@ function App() {
     const [shortUrl, setShortUrl] = useState(null);
 
     return (
-        <main className="min-h-screen bg-slate-50 px-4 py-12 sm:py-16">
+        <main className="min-h-screen bg-[#e8eaf2] px-4 py-12 sm:py-16">
 
             <div className="mx-auto w-full max-w-3xl">
 
@@ -17,13 +17,13 @@ function App() {
                         URL Shortener
                     </h1>
 
-                    <p className="mt-2 text-sm text-slate-500">
+                    <p className="mt-2 text-sm text-slate-600">
                         Create short links and track their clicks.
                     </p>
                 </header>
 
                 
-                <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+                <section className="rounded-xl border border-[#d7d9e2] bg-[#f4f5f9] p-5 shadow-sm sm:p-6">
 
                     <ShortenForm onShorten={setShortUrl} />
 

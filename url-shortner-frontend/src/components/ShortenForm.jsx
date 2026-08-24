@@ -36,7 +36,7 @@ function ShortenForm({ onShorten }) {
     return (
         <form onSubmit={handleSubmit}>
 
-            <label className="mb-2 block text-sm font-medium text-slate-700">
+            <label className="mb-2 block text-sm font-medium text-slate-800">
                 Enter URL
             </label>
 
@@ -48,7 +48,7 @@ function ShortenForm({ onShorten }) {
                     onChange={(e) => setLongUrl(e.target.value)}
                     placeholder="https://example.com/your-long-url"
                     disabled={loading}
-                    className="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:bg-slate-50"
+                    className="min-w-0 flex-1 rounded-lg border border-[#d7d9e2] bg-white px-4 py-3 text-sm text-slate-900 outline-none placeholder:text-slate-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
                 />
 
                 <button
